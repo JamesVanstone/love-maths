@@ -12,6 +12,10 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         })
     }
+
+
+    runGame("addition");
+
 })
 
 
@@ -19,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
  * The main game logic function, called when the script is first loaded
  * and after the user's answer has been processed.
  */
-function runGame() {
+function runGame(gameType) {
 
     // Generate two random numbers between 1 and 25.
     let num1 = Math.floor(Math.random() * 25) +1;
